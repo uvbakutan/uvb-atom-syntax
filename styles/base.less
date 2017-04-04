@@ -29,6 +29,11 @@ atom-text-editor {
       &.cursor-line-no-selection {
         color: @syntax-gutter-text-color-selected;
       }
+
+      &.line-diff-modified,
+      &.line-diff-added {
+        color: white;
+      }
     }
   }
 
@@ -56,6 +61,10 @@ atom-text-editor {
   }
 }
 
+.atom-text-editor .line.highlight-line, atom-text-editor .line.highlight-line {
+  background: rgba(200, 200, 200, 0.2) !important;
+}
+
 atom-text-editor .search-results .syntax--marker .region {
   background-color: transparent;
   border: 1px solid @syntax-result-marker-color;
@@ -66,24 +75,24 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 }
 
 .syntax--comment {
-  color: @grey;
+  color: @yoda;
 }
 
 .syntax--entity {
   &.syntax--name.syntax--type {
-    color: @very-light-grey;
+    color: @light-grey;
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @very-light-grey;
+    color: @light-grey;
   }
 }
 
 .syntax--keyword {
-  color: @yoda;
+  color: @artoo;
 
   &.syntax--control {
-    color: @yoda;
+    color: @artoo;
   }
 
   &.syntax--operator {
@@ -156,7 +165,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 }
 
 .syntax--variable {
-  color: @very-light-grey;
+  color: @grey;
 
   &.syntax--interpolation {
     color: @vader;
@@ -221,14 +230,14 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
   }
 
   &.syntax--section.syntax--embedded {
-    color: @very-light-grey;
+    color: @light-grey;
   }
 
 }
 
 .syntax--support {
   &.syntax--class {
-    color: @very-light-grey;
+    color: @light-grey;
   }
 
   &.syntax--function  {
@@ -246,7 +255,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
   }
 
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @very-light-grey;
+    color: @light-grey;
   }
 
   &.syntax--name.syntax--section {
@@ -258,7 +267,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @threepio;
+    color: @artoo;
 
     &.syntax--id {
       color: @yoda;
