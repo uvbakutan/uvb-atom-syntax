@@ -1,0 +1,15 @@
+{
+  "name": "uvb-atom-syntax",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "description": "Atom syntax inspired by an old hope - nick-f",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/uvbakutan/uvb-atom-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.13 <2.0.0"
+  }
+}
